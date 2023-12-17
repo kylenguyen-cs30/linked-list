@@ -1,4 +1,4 @@
-#include "linked-list.cpp"
+#include "linked-list.h"
 
 void LinkedList::insert(int data){
     Node* newNode = new Node();

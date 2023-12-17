@@ -1,42 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <string>
-
-using namespace std;
-
-struct Node
-{
-    int data;
-    Node *next;
-
-};
-
-class LinkedList
-{
-private:
-    Node *head;
-public:
-    LinkedList(/* args */);
-    ~LinkedList();
-
-    void insert(int data);
-
-    void print();
-
-    void reverse();
-
-    int returnAddress(int data);
-
-    void deleteNode(int data);
-
-    int getSize();
-
-    void insertAtBeginning(int data);
-
-    void insertAtEnd(int data);
-};
-
-
+#include "linked-list.h"
 
 
 int main(int argc, char const *argv[])
@@ -80,21 +42,4 @@ int main(int argc, char const *argv[])
 
 
     return 0;
-}
-
-
-
-
-LinkedList::LinkedList(){
-    head = NULL;
-}
-
-LinkedList::~LinkedList(){
-    Node *current = head;
-    while (current != NULL){
-        Node *next = current->next;
-        delete current;
-        current = next;
-    }
-    
 }

@@ -1,9 +1,13 @@
 echo starts
 
-echo compile
-g++ linked-list.cpp -o RUN -std=c++11
+echo compile files...
 
-echo run
+# get list of all .cpp files
+files=$(ls *.cpp)
+# compile all of them
+g++ $files -o RUN -std=c++11
+
+echo Running
 ./RUN
 
 echo remove
