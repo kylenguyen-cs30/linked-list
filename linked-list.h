@@ -48,6 +48,8 @@ public:
 
     void insertAtBeginning(int data);
 
+    void sort();
+
 };
 
 #endif // !LIN
