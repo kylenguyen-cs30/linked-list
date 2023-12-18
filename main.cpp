@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
         switch (choice){
             // insert data at the end of the list
             case 1:
-                cout << "Enter number: "<< endl;
+                cout << "Enter number: ";
                 cin >> data;
                 l1.insert(data);
                 break;
@@ -44,21 +44,22 @@ int main(int argc, char const *argv[])
 
             // get the address of the data
             case 4:
-                cout << "Enter number: " << endl;
+                cout << "Enter number: ";
                 cin >> data;
-                l1.returnAddress(data);
+                cout << "Address of Node "<< data << " : " << l1.returnAddress(data) << endl;
+
                 break;
 
             // delete the node
             case 5:
-                cout << "Enter number: " << endl;
+                cout << "Enter number: ";
                 cin >> data;
                 l1.deleteNode(data);
                 break;
 
             // insert at the beginning of the list
             case 6:
-                cout << "Enter number: " << endl;
+                cout << "Enter number: ";
                 cin >> data;
                 l1.insertAtBeginning(data);
                 break;
@@ -67,9 +68,13 @@ int main(int argc, char const *argv[])
             case 7:
                 cout << "Size: " << l1.getSize() << endl;
                 break;
+            
             default:
                 break;
         }
+
+        cout << endl;
+        cout << endl;
     }
     
 
