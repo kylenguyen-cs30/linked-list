@@ -40,7 +40,7 @@ public:
 
     void reverse();
 
-    int returnAddress(int data);
+    Node* returnAddress(int data);
 
     void deleteNode(int data);
 
